@@ -21,9 +21,17 @@ const client = new MongoClient(uri, {
   useUnifiedTopology: true,
   serverApi: ServerApiVersion.v1,
 });
-client.connect((err) => {
-  const collection = client.db("test").collection("devices");
-  console.log("db connected through env");
-  // perform actions on the collection object
-  client.close();
-});
+async function run() {
+  try {
+    await client.connect();
+    const fruitCollection = client.db("dbuser").collection("foods");
+    app.get("/food", async (req, res) => {
+      const query = {};
+      const cursor = fruitCollection.find(query);
+      const foods = await cursor.toArray();
+      res.send(foods);
+    });
+  } finally {
+  }
+}
+run().catch(console.dir);

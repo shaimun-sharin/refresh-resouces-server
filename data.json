@@ -1,0 +1,84 @@
+[
+    {
+      "name": "Apples",
+      "picture": "https://i.ibb.co/XSGv1wV/image.webp",
+      "price": "$800",
+      "quantity": "10 dozens",
+      "supplierName": "AppleDeck",
+      "description": " Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition."
+    },
+    {
+      "name": "Mangoes",
+      "picture": "https://i.ibb.co/G9ngYDv/mangoes.jpg",
+      "price": "$665",
+      "quantity": "7 dozens",
+      "supplierName": "Things To supply",
+      "description": "A mango is an edible stone fruit produced by the tropical tree Mangifera indica which is believed to have originated from the region between northwestern Myanmar, Bangladesh, and northeastern India"
+    },
+    {
+      "name": "Oranges",
+      "picture": "https://i.ibb.co/C02KYSt/oranges.jpg",
+      "price": "$500",
+      "quantity": "10 dozens",
+      "supplierName": "LiveSale Supply",
+      "description": "An orange is a fruit of various citrus species in the family Rutaceae; it primarily refers to Citrus  sinensis,which is also called sweet orange"
+    },
+    {
+      "name": "Grapes",
+      "picture": "https://i.ibb.co/M9n7LS8/grapes.jpg",
+      "price": "$990",
+      "quantity": "9 dozens",
+      "supplierName": "Allied Distribution Services",
+      "description": "Grapes can be eaten fresh as table grapes, used for making wine, jam, grape juice, jelly, grape seed extract, vinegar, and grape seed oil, or dried as raisins, currants and sultanas"
+    },
+    {
+      "name": "Strawberries",
+      "picture": "https://i.ibb.co/C1qyY1G/strawberry.webp",
+      "price": "$1000",
+      "quantity": "10 dozens",
+      "supplierName": "Supplyspace Global",
+      "description": "The strawberry  is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit. The fruit is widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetnes"
+    },
+    {
+      "name": "Avocados",
+      "picture": "https://i.ibb.co/dk10CCk/avocado.jpg",
+      "price": "$500",
+      "quantity": "5 dozens",
+      "supplierName": "Capital Food",
+      "description": "Depending on the variety, avocados have green, brown, purplish, or black skin when ripe, and may be pear-shaped, egg-shaped, or spherical. Commercially, the fruits are picked while immature, and ripened after harvesting"
+    },
+    {
+      "name": "DragonFruits",
+      "picture": "https://i.ibb.co/s9sywZ5/dragonfruit.jpg",
+      "price": "$1200",
+      "quantity": "10 dozens",
+      "supplierName": "Distribution Wofl",
+      "description": "Dragon fruit is cultivated in Mexico, South Asia, Southeast Asia, East Asia, the United States, the Caribbean, Australia, Mesoamerica and throughout tropical and subtropical regions of the world"
+    },
+    {
+      "name": "Peaches",
+      "picture": "https://i.ibb.co/RyKBpT7/Peach.png",
+      "price": "$600",
+      "quantity": "6 dozens",
+      "supplierName": "Transcon Trading",
+      "description": "The peach is a juicy fruit with various characteristics.Peaches grow in a fairly limited range in dry, continental or temperate climates"
+    },
+    
+    {
+      "name": "Pomelos",
+      "picture": "https://i.ibb.co/8Yy8QtX/pomelo.jpg",
+      "price": "$520",
+      "quantity": "4 dozens",
+      "supplierName": "Carboline Company",
+      "description": "The pomelo  is the largest citrus fruit from the family Rutaceae and is a natural, i.e., non-hybrid, citrus fruit, native to Southeast Asia."
+    },
+    {
+      "name": "Pomegranates",
+      "picture": "https://i.ibb.co/wWGSPDm/Pomegranate.jpg",
+      "price": "$700",
+      "quantity": "5 dozens",
+      "supplierName": "Pacific Bevere",
+      "description": "The pomegranate (Punica granatum) is a fruit-bearing deciduous shrub in the family Lythraceae, subfamily Punicoideae, that grows between 5 and 10 m (16 and 33 ft) tall."
+    }
+    
+  ]
