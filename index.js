@@ -15,7 +15,7 @@ app.listen(port, () => {
   console.log(`listening to port ${port}`);
 });
 
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.ekqo2.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.bojeg.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -24,7 +24,7 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     await client.connect();
-    const fruitCollection = client.db("dbuser").collection("foods");
+    const fruitCollection = client.db("fooddb").collection("foods");
     app.get("/food", async (req, res) => {
       const query = {};
       const cursor = fruitCollection.find(query);
@@ -34,4 +34,5 @@ async function run() {
   } finally {
   }
 }
+
 run().catch(console.dir);
