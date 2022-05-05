@@ -25,18 +25,28 @@ async function run() {
   try {
     await client.connect();
     const fruitCollection = client.db("fooddb").collection("foods");
+    //GET Data
     app.get("/food", async (req, res) => {
       const query = {};
       const cursor = fruitCollection.find(query);
       const foods = await cursor.toArray();
       res.send(foods);
     });
+    //GET single Data
 
     app.get("/food/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: ObjectId(id) };
       const food = await fruitCollection.findOne(query);
       res.send(food);
+    });
+
+    //POST Data
+    app.post("/food", async (req, res) => {
+      const newFood = req.body;
+      const result = await fruitCollection.insertOne(newFood);
+      console.log(result);
+      res.send(result);
     });
   } finally {
   }
