@@ -48,6 +48,13 @@ async function run() {
       console.log(result);
       res.send(result);
     });
+    // DELETE data
+    app.delete("/food/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: ObjectId(id) };
+      const result = await fruitCollection.deleteOne(query);
+      res.send(result);
+    });
   } finally {
   }
 }
