@@ -5,7 +5,8 @@
       "price": "$800",
       "quantity": 10,
       "supplierName": "AppleDeck",
-      "description": " Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition."
+      "description": " Apples have been grown for thousands of years in Asia and Europe and were brought to North America by European colonists. Apples have religious and mythological significance in many cultures, including Norse, Greek, and European Christian tradition.",
+      "email":"user@gmail.com"
     },
     {
       "name": "Mangoes",
@@ -13,15 +14,17 @@
       "price": "$665",
       "quantity": 7,
       "supplierName": "Things To supply",
-      "description": "A mango is an edible stone fruit produced by the tropical tree Mangifera indica which is believed to have originated from the region between northwestern Myanmar, Bangladesh, and northeastern India"
+      "description": "A mango is an edible stone fruit produced by the tropical tree Mangifera indica which is believed to have originated from the region between northwestern Myanmar, Bangladesh, and northeastern India",
+      "email":"user@gmail.com"
     },
     {
       "name": "Oranges",
       "picture": "https://i.ibb.co/C02KYSt/oranges.jpg",
-      "price": 7,
-      "quantity": "10 dozens",
+      "price": "$700",
+      "quantity": 10,
       "supplierName": "LiveSale Supply",
-      "description": "An orange is a fruit of various citrus species in the family Rutaceae; it primarily refers to Citrus  sinensis,which is also called sweet orange"
+      "description": "An orange is a fruit of various citrus species in the family Rutaceae; it primarily refers to Citrus  sinensis,which is also called sweet orange",
+      "email":"user@gmail.com"
     },
     {
       "name": "Grapes",
@@ -29,7 +32,8 @@
       "price": "$990",
       "quantity": 9,
       "supplierName": "Allied Distribution Services",
-      "description": "Grapes can be eaten fresh as table grapes, used for making wine, jam, grape juice, jelly, grape seed extract, vinegar, and grape seed oil, or dried as raisins, currants and sultanas"
+      "description": "Grapes can be eaten fresh as table grapes, used for making wine, jam, grape juice, jelly, grape seed extract, vinegar, and grape seed oil, or dried as raisins, currants and sultanas",
+      "email":"user@gmail.com"
     },
     {
       "name": "Strawberries",
@@ -37,7 +41,8 @@
       "price": "$1000",
       "quantity": 10,
       "supplierName": "Supplyspace Global",
-      "description": "The strawberry  is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit."
+      "description": "The strawberry  is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit.",
+      "email":"user@gmail.com"
     },
     {
       "name": "Avocados",
@@ -45,7 +50,8 @@
       "price": "$500",
       "quantity": 5,
       "supplierName": "Capital Food",
-      "description": "Depending on the variety, avocados have green, brown, purplish, or black skin when ripe, and may be pear-shaped, egg-shaped, or spherical."
+      "description": "Depending on the variety, avocados have green, brown, purplish, or black skin when ripe, and may be pear-shaped, egg-shaped, or spherical.",
+      "email":"user@gmail.com"
     },
     {
       "name": "DragonFruits",
@@ -53,7 +59,8 @@
       "price": "$1200",
       "quantity": 10,
       "supplierName": "Distribution Wofl",
-      "description": "Dragon fruit is cultivated in Mexico, South Asia, Southeast Asia, East Asia, the United States, the Caribbean, Australia, Mesoamerica and throughout tropical and subtropical regions of the world"
+      "description": "Dragon fruit is cultivated in Mexico, South Asia, Southeast Asia, East Asia, the United States, the Caribbean, Australia, Mesoamerica and throughout tropical and subtropical regions of the world",
+      "email":"user@gmail.com"
     },
     {
       "name": "Peaches",
@@ -61,7 +68,8 @@
       "price": "$600",
       "quantity": 6,
       "supplierName": "Transcon Trading",
-      "description": "The peach is a juicy fruit with various characteristics.Peaches grow in a fairly limited range in dry, continental or temperate climates"
+      "description": "The peach is a juicy fruit with various characteristics.Peaches grow in a fairly limited range in dry, continental or temperate climates",
+      "email":"user@gmail.com"
     },
     
     {
@@ -70,7 +78,8 @@
       "price": "$520",
       "quantity": 4,
       "supplierName": "Carboline Company",
-      "description": "The pomelo  is the largest citrus fruit from the family Rutaceae and is a natural, i.e., non-hybrid, citrus fruit, native to Southeast Asia."
+      "description": "The pomelo  is the largest citrus fruit from the family Rutaceae and is a natural, i.e., non-hybrid, citrus fruit, native to Southeast Asia.",
+      "email":"user@gmail.com"
     },
     {
       "name": "Pomegranates",
@@ -78,7 +87,8 @@
       "price": "$700",
       "quantity": 5,
       "supplierName": "Pacific Bevere",
-      "description": "The pomegranate (Punica granatum) is a fruit-bearing deciduous shrub in the family Lythraceae, subfamily Punicoideae, that grows between 5 and 10 m (16 and 33 ft) tall."
+      "description": "The pomegranate (Punica granatum) is a fruit-bearing deciduous shrub in the family Lythraceae, subfamily Punicoideae, that grows between 5 and 10 m (16 and 33 ft) tall.",
+      "email":"user@gmail.com"
     }
     
   ]

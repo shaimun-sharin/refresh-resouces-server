@@ -43,6 +43,7 @@ async function run() {
 
     //POST Data
     app.post("/food", async (req, res) => {
+      console.log(req.body.email);
       const newFood = req.body;
       const result = await fruitCollection.insertOne(newFood);
       console.log(result);
@@ -54,6 +55,14 @@ async function run() {
       const query = { _id: ObjectId(id) };
       const result = await fruitCollection.deleteOne(query);
       res.send(result);
+    });
+    app.get("/food", async (req, res) => {
+      // const email = req.body.email;
+      // console.log(email);
+      const query = {};
+      const cursor = fruitCollection.find(query);
+      const foods = await cursor.toArray();
+      res.send(foods);
     });
   } finally {
   }
