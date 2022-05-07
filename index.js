@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const jwt = require("jsonwebtoken");
 const app = express();
 require("dotenv").config();
 const port = process.env.PORT || 5000;
@@ -25,6 +26,15 @@ async function run() {
   try {
     await client.connect();
     const fruitCollection = client.db("fooddb").collection("foods");
+    // AUTH
+    app.post("/login", async (req, res) => {
+      const user = req.body;
+      const accessToken = jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {
+        expiresIn: "1d",
+      });
+      res.send({ accessToken });
+    });
+
     //GET Data
     app.get("/food", async (req, res) => {
       const query = {};
@@ -43,7 +53,8 @@ async function run() {
     app.put("/food/:id", async (req, res) => {
       const id = req.params.id;
       const updatedQuantity = req.body;
-      const filter = { _id: ObjectId(id) };
+      console.log(updatedQuantity);
+      const filter = { quantity: quantity };
       const options = { upsert: true };
       const updateDoc = {
         $set: {
