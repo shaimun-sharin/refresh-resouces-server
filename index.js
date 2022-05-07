@@ -49,7 +49,7 @@ async function run() {
       res.send(result);
     });
     app.get("/food", async (req, res) => {
-      const email = req.query;
+      const email = req.body.email;
       console.log(email);
       const query = {};
       const cursor = fruitCollection.find(query);
