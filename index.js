@@ -8,7 +8,7 @@ const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 app.use(cors());
 app.use(express.json());
 app.get("/", (req, res) => {
-  res.send("running server");
+  res.send("running server, ki moja");
 });
 
 app.listen(port, () => {
@@ -40,8 +40,7 @@ async function run() {
       const food = await fruitCollection.findOne(query);
       res.send(food);
     });
-
-    //POST Data
+    //    POST Data
     app.post("/food", async (req, res) => {
       console.log(req.body.email);
       const newFood = req.body;
@@ -55,14 +54,6 @@ async function run() {
       const query = { _id: ObjectId(id) };
       const result = await fruitCollection.deleteOne(query);
       res.send(result);
-    });
-    app.get("/food", async (req, res) => {
-      // const email = req.body.email;
-      // console.log(email);
-      const query = {};
-      const cursor = fruitCollection.find(query);
-      const foods = await cursor.toArray();
-      res.send(foods);
     });
   } finally {
   }
