@@ -40,9 +40,26 @@ async function run() {
       const food = await fruitCollection.findOne(query);
       res.send(food);
     });
+    app.put("/food/:id", async (req, res) => {
+      const id = req.params.id;
+      const updatedQuantity = req.body;
+      const filter = { _id: ObjectId(id) };
+      const options = { upsert: true };
+      const updateDoc = {
+        $set: {
+          quantity: updatedQuantity,
+        },
+      };
+      const result = await fruitCollection.updateOne(
+        filter,
+        updateDoc,
+        options
+      );
+      res.send(result);
+    });
     //    POST Data
     app.post("/food", async (req, res) => {
-      console.log(req.body.email);
+      console.log(req.body);
       const newFood = req.body;
       const result = await fruitCollection.insertOne(newFood);
       console.log(result);
@@ -56,6 +73,7 @@ async function run() {
       const items = await cursor.toArray();
       res.send(items);
     });
+
     // DELETE data
     app.delete("/food/:id", async (req, res) => {
       const id = req.params.id;
