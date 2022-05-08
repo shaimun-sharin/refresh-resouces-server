@@ -26,6 +26,7 @@ async function run() {
   try {
     await client.connect();
     const fruitCollection = client.db("fooddb").collection("foods");
+    const adminCollection = client.db("admindb").collection("admins");
     // AUTH
     app.post("/login", async (req, res) => {
       const user = req.body;
@@ -94,6 +95,14 @@ async function run() {
       const query = { _id: ObjectId(id) };
       const result = await fruitCollection.deleteOne(query);
       res.send(result);
+    });
+
+    // ADMIN DATA
+    app.get("/admin", async (req, res) => {
+      const query = {};
+      const cursor = adminCollection.find(query);
+      const admins = await cursor.toArray();
+      res.send(admins);
     });
   } finally {
   }
