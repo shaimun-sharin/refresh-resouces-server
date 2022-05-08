@@ -54,6 +54,7 @@ async function run() {
       const id = req.params.id;
       const updatedQuantity = req.body;
       console.log(updatedQuantity);
+
       const filter = { quantity: quantity };
       const options = { upsert: true };
       const updateDoc = {
@@ -77,6 +78,8 @@ async function run() {
       res.send(result);
     });
     app.get("/item", async (req, res) => {
+      const authHeader = req.headers.authorization;
+      console.log(authHeader);
       const email = req.query.email;
       console.log(email);
       const query = { email: email };
