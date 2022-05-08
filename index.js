@@ -76,10 +76,10 @@ async function run() {
       console.log(result);
       res.send(result);
     });
-    app.get("/food", async (req, res) => {
-      const email = req.body.email;
+    app.get("/item", async (req, res) => {
+      const email = req.query.email;
       console.log(email);
-      const query = {};
+      const query = { email: email };
       const cursor = fruitCollection.find(query);
       const items = await cursor.toArray();
       res.send(items);
