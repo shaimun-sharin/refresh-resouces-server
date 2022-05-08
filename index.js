@@ -9,7 +9,7 @@ const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 app.use(cors());
 app.use(express.json());
 app.get("/", (req, res) => {
-  res.send("running server, ki moja");
+  res.send("running server");
 });
 
 app.listen(port, () => {
