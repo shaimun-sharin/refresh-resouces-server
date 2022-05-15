@@ -86,6 +86,23 @@ async function run() {
       const admins = await cursor.toArray();
       res.send(admins);
     });
+    app.put("/food/:id", async (req, res) => {
+      const id = req.params.id;
+      const updateQuantity = parseInt(req.body);
+      const filter = { _id: ObjectId(id) };
+      const options = { upsert: true };
+      const updatedDoc = {
+        $set: {
+          quantity: updateQuantity.quantity,
+        },
+      };
+      const result = await fruitCollection.updateOne(
+        filter,
+        updatedDoc,
+        options
+      );
+      res.send(result);
+    });
   } finally {
   }
 }
